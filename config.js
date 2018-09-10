@@ -592,13 +592,6 @@ System.config({
       "aurelia-path",
       "aurelia-metadata"
     ],
-    "npm:aurelia-templating-router@1.0.0/router-view.js": [
-      "aurelia-dependency-injection",
-      "aurelia-templating",
-      "aurelia-router",
-      "aurelia-metadata",
-      "aurelia-pal"
-    ],
     "npm:aurelia-templating-router@1.0.0/route-href.js": [
       "aurelia-templating",
       "aurelia-dependency-injection",
@@ -632,6 +625,13 @@ System.config({
       "aurelia-metadata"
     ],
     "npm:aurelia-task-queue@1.1.0/aurelia-task-queue.js": [
+      "aurelia-pal"
+    ],
+    "npm:aurelia-templating-router@1.0.0/router-view.js": [
+      "aurelia-dependency-injection",
+      "aurelia-templating",
+      "aurelia-router",
+      "aurelia-metadata",
       "aurelia-pal"
     ],
     "npm:aurelia-templating-resources@1.1.1.js": [
@@ -669,35 +669,30 @@ System.config({
       "./analyze-view-factory",
       "./aurelia-hide-style"
     ],
+    "npm:aurelia-templating-resources@1.1.1/signal-binding-behavior.js": [
+      "./binding-signaler"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/repeat-strategy-locator.js": [
+      "./null-repeat-strategy",
+      "./array-repeat-strategy",
+      "./map-repeat-strategy",
+      "./set-repeat-strategy",
+      "./number-repeat-strategy"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/if.js": [
+      "aurelia-templating",
+      "aurelia-dependency-injection"
+    ],
     "npm:aurelia-templating-resources@1.1.1/compose.js": [
       "aurelia-dependency-injection",
       "aurelia-task-queue",
       "aurelia-templating",
       "aurelia-pal"
     ],
-    "npm:aurelia-templating-resources@1.1.1/if.js": [
-      "aurelia-templating",
-      "aurelia-dependency-injection"
-    ],
     "npm:aurelia-templating-resources@1.1.1/with.js": [
       "aurelia-dependency-injection",
       "aurelia-templating",
       "aurelia-binding"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/repeat.js": [
-      "aurelia-dependency-injection",
-      "aurelia-binding",
-      "aurelia-templating",
-      "./repeat-strategy-locator",
-      "./repeat-utilities",
-      "./analyze-view-factory",
-      "./abstract-repeater"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/show.js": [
-      "aurelia-dependency-injection",
-      "aurelia-templating",
-      "aurelia-pal",
-      "./aurelia-hide-style"
     ],
     "npm:aurelia-templating-resources@1.1.1/hide.js": [
       "aurelia-dependency-injection",
@@ -705,14 +700,20 @@ System.config({
       "aurelia-pal",
       "./aurelia-hide-style"
     ],
-    "npm:aurelia-templating-resources@1.1.1/replaceable.js": [
+    "npm:aurelia-templating-resources@1.1.1/show.js": [
       "aurelia-dependency-injection",
-      "aurelia-templating"
+      "aurelia-templating",
+      "aurelia-pal",
+      "./aurelia-hide-style"
     ],
     "npm:aurelia-templating-resources@1.1.1/sanitize-html.js": [
       "aurelia-binding",
       "aurelia-dependency-injection",
       "./html-sanitizer"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/replaceable.js": [
+      "aurelia-dependency-injection",
+      "aurelia-templating"
     ],
     "npm:aurelia-templating-resources@1.1.1/focus.js": [
       "aurelia-templating",
@@ -728,15 +729,24 @@ System.config({
       "aurelia-path",
       "aurelia-pal"
     ],
-    "npm:aurelia-templating-resources@1.1.1/signal-binding-behavior.js": [
-      "./binding-signaler"
+    "npm:aurelia-templating-resources@1.1.1/attr-binding-behavior.js": [
+      "aurelia-binding"
     ],
-    "npm:aurelia-templating-resources@1.1.1/repeat-strategy-locator.js": [
-      "./null-repeat-strategy",
-      "./array-repeat-strategy",
-      "./map-repeat-strategy",
-      "./set-repeat-strategy",
-      "./number-repeat-strategy"
+    "npm:aurelia-templating-resources@1.1.1/debounce-binding-behavior.js": [
+      "aurelia-binding"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/binding-mode-behaviors.js": [
+      "aurelia-binding",
+      "aurelia-metadata"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/throttle-binding-behavior.js": [
+      "aurelia-binding"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/binding-signaler.js": [
+      "aurelia-binding"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/update-trigger-binding-behavior.js": [
+      "aurelia-binding"
     ],
     "npm:aurelia-templating-resources@1.1.1/map-repeat-strategy.js": [
       "./repeat-utilities"
@@ -750,34 +760,24 @@ System.config({
     "npm:aurelia-templating-resources@1.1.1/aurelia-hide-style.js": [
       "aurelia-pal"
     ],
-    "npm:aurelia-templating-resources@1.1.1/attr-binding-behavior.js": [
-      "aurelia-binding"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/binding-mode-behaviors.js": [
-      "aurelia-binding",
-      "aurelia-metadata"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/throttle-binding-behavior.js": [
-      "aurelia-binding"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/debounce-binding-behavior.js": [
-      "aurelia-binding"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/binding-signaler.js": [
-      "aurelia-binding"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/update-trigger-binding-behavior.js": [
-      "aurelia-binding"
-    ],
     "npm:aurelia-templating-resources@1.1.1/html-resource-plugin.js": [
       "aurelia-templating",
       "./dynamic-element"
     ],
-    "npm:aurelia-templating-resources@1.1.1/array-repeat-strategy.js": [
-      "./repeat-utilities",
+    "npm:aurelia-templating-resources@1.1.1/repeat-utilities.js": [
       "aurelia-binding"
     ],
-    "npm:aurelia-templating-resources@1.1.1/repeat-utilities.js": [
+    "npm:aurelia-templating-resources@1.1.1/repeat.js": [
+      "aurelia-dependency-injection",
+      "aurelia-binding",
+      "aurelia-templating",
+      "./repeat-strategy-locator",
+      "./repeat-utilities",
+      "./analyze-view-factory",
+      "./abstract-repeater"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/array-repeat-strategy.js": [
+      "./repeat-utilities",
       "aurelia-binding"
     ],
     "npm:aurelia-templating-resources@1.1.1/dynamic-element.js": [
@@ -901,13 +901,6 @@ System.config({
       "./array-set",
       "./mapping-list"
     ],
-    "npm:source-map@0.6.1/lib/source-map-consumer.js": [
-      "./util",
-      "./binary-search",
-      "./array-set",
-      "./base64-vlq",
-      "./quick-sort"
-    ],
     "npm:source-map@0.6.1/lib/source-node.js": [
       "./source-map-generator",
       "./util",
@@ -922,13 +915,20 @@ System.config({
     "npm:process@0.11.10.js": [
       "npm:process@0.11.10/browser.js"
     ],
+    "npm:source-map@0.6.1/lib/source-map-consumer.js": [
+      "./util",
+      "./binary-search",
+      "./array-set",
+      "./base64-vlq",
+      "./quick-sort"
+    ],
+    "npm:source-map@0.6.1/lib/mapping-list.js": [
+      "./util"
+    ],
     "npm:source-map@0.6.1/lib/base64-vlq.js": [
       "./base64"
     ],
     "npm:source-map@0.6.1/lib/array-set.js": [
-      "./util"
-    ],
-    "npm:source-map@0.6.1/lib/mapping-list.js": [
       "./util"
     ],
     "npm:esprima@4.0.0.js": [
@@ -972,11 +972,11 @@ System.config({
       "./definition",
       "assert"
     ],
-    "github:jspm/nodelibs-assert@0.1.0/index.js": [
-      "assert"
-    ],
     "npm:es6-weak-map@2.0.2.js": [
       "npm:es6-weak-map@2.0.2/index"
+    ],
+    "github:jspm/nodelibs-assert@0.1.0/index.js": [
+      "assert"
     ],
     "npm:esrecurse@4.2.1.js": [
       "npm:esrecurse@4.2.1/esrecurse.js"
@@ -987,16 +987,16 @@ System.config({
     "npm:es6-map@0.1.5.js": [
       "npm:es6-map@0.1.5/index"
     ],
-    "npm:escope@3.6.0/lib/pattern-visitor.js": [
-      "estraverse",
-      "esrecurse"
+    "npm:es6-weak-map@2.0.2/index.js": [
+      "./is-implemented",
+      "./polyfill"
     ],
     "npm:assert@1.4.1.js": [
       "npm:assert@1.4.1/assert.js"
     ],
-    "npm:es6-weak-map@2.0.2/index.js": [
-      "./is-implemented",
-      "./polyfill"
+    "npm:escope@3.6.0/lib/pattern-visitor.js": [
+      "estraverse",
+      "esrecurse"
     ],
     "npm:esrecurse@4.2.1/esrecurse.js": [
       "estraverse",
@@ -1009,6 +1009,17 @@ System.config({
     "npm:assert@1.4.1/assert.js": [
       "util",
       "buffer"
+    ],
+    "npm:es6-weak-map@2.0.2/polyfill.js": [
+      "es5-ext/object/set-prototype-of",
+      "es5-ext/object/valid-object",
+      "es5-ext/object/valid-value",
+      "es5-ext/string/random-uniq",
+      "d",
+      "es6-iterator/get",
+      "es6-iterator/for-of",
+      "es6-symbol",
+      "./is-native-implemented"
     ],
     "github:jspm/nodelibs-buffer@0.1.1.js": [
       "github:jspm/nodelibs-buffer@0.1.1/index"
@@ -1028,17 +1039,6 @@ System.config({
     ],
     "npm:ieee754@1.1.11.js": [
       "npm:ieee754@1.1.11/index.js"
-    ],
-    "npm:es6-weak-map@2.0.2/polyfill.js": [
-      "es5-ext/object/set-prototype-of",
-      "es5-ext/object/valid-object",
-      "es5-ext/object/valid-value",
-      "es5-ext/string/random-uniq",
-      "d",
-      "es6-iterator/get",
-      "es6-iterator/for-of",
-      "es6-symbol",
-      "./is-native-implemented"
     ],
     "npm:es6-map@0.1.5/polyfill.js": [
       "es5-ext/array/#/clear",
@@ -1060,11 +1060,11 @@ System.config({
     "npm:es5-ext@0.10.42/object/set-prototype-of.js": [
       "./set-prototype-of/index"
     ],
-    "npm:es5-ext@0.10.42/object/valid-value.js": [
-      "./is-value"
-    ],
     "npm:es5-ext@0.10.42/object/valid-object.js": [
       "./is-object"
+    ],
+    "npm:es5-ext@0.10.42/object/valid-value.js": [
+      "./is-value"
     ],
     "npm:d@1.0.0.js": [
       "npm:d@1.0.0/index"
@@ -1107,20 +1107,15 @@ System.config({
       "es6-symbol",
       "./iterator-kinds"
     ],
-    "npm:util@0.10.3/util.js": [
-      "./support/isBufferBrowser",
-      "inherits",
-      "process"
-    ],
     "npm:es5-ext@0.10.42/object/set-prototype-of/index.js": [
       "./is-implemented",
       "./shim"
     ],
-    "npm:es5-ext@0.10.42/object/is-value.js": [
-      "../function/noop"
-    ],
     "npm:es5-ext@0.10.42/object/is-object.js": [
       "./is-value"
+    ],
+    "npm:es5-ext@0.10.42/object/is-value.js": [
+      "../function/noop"
     ],
     "npm:es6-symbol@3.1.1/index.js": [
       "./is-implemented",
@@ -1132,6 +1127,12 @@ System.config({
       "es5-ext/object/is-callable",
       "es5-ext/string/#/contains"
     ],
+    "npm:es6-iterator@2.0.3/string.js": [
+      "es5-ext/object/set-prototype-of",
+      "d",
+      "es6-symbol",
+      "./index"
+    ],
     "npm:es6-iterator@2.0.3/array.js": [
       "es5-ext/object/set-prototype-of",
       "es5-ext/string/#/contains",
@@ -1139,11 +1140,10 @@ System.config({
       "es6-symbol",
       "./index"
     ],
-    "npm:es6-iterator@2.0.3/string.js": [
-      "es5-ext/object/set-prototype-of",
-      "d",
-      "es6-symbol",
-      "./index"
+    "npm:util@0.10.3/util.js": [
+      "./support/isBufferBrowser",
+      "inherits",
+      "process"
     ],
     "npm:es5-ext@0.10.42/number/is-nan/index.js": [
       "./is-implemented",
@@ -1152,12 +1152,12 @@ System.config({
     "npm:es5-ext@0.10.42/number/to-pos-integer.js": [
       "./to-integer"
     ],
+    "npm:es6-iterator@2.0.3.js": [
+      "npm:es6-iterator@2.0.3/index"
+    ],
     "npm:event-emitter@0.3.5/index.js": [
       "d",
       "es5-ext/object/valid-callable"
-    ],
-    "npm:es6-iterator@2.0.3.js": [
-      "npm:es6-iterator@2.0.3/index"
     ],
     "npm:es6-iterator@2.0.3/is-iterable.js": [
       "es5-ext/function/is-arguments",
@@ -1168,19 +1168,16 @@ System.config({
     "npm:es6-map@0.1.5/lib/iterator-kinds.js": [
       "es5-ext/object/primitive-set"
     ],
-    "npm:inherits@2.0.1.js": [
-      "npm:inherits@2.0.1/inherits_browser.js"
+    "npm:es5-ext@0.10.42/object/set-prototype-of/shim.js": [
+      "../is-object",
+      "../valid-value",
+      "../create"
     ],
     "npm:es5-ext@0.10.42/object/assign.js": [
       "./assign/index"
     ],
     "npm:es5-ext@0.10.42/string/#/contains.js": [
       "./contains/index"
-    ],
-    "npm:es5-ext@0.10.42/object/set-prototype-of/shim.js": [
-      "../is-object",
-      "../valid-value",
-      "../create"
     ],
     "npm:es6-symbol@3.1.1/polyfill.js": [
       "d",
@@ -1199,20 +1196,23 @@ System.config({
       "d/auto-bind",
       "es6-symbol"
     ],
+    "npm:inherits@2.0.1.js": [
+      "npm:inherits@2.0.1/inherits_browser.js"
+    ],
     "npm:es5-ext@0.10.42/number/to-integer.js": [
       "../math/sign/index"
     ],
-    "npm:es5-ext@0.10.42/string/#/contains/index.js": [
-      "./is-implemented",
-      "./shim"
+    "npm:es5-ext@0.10.42/object/create.js": [
+      "./set-prototype-of/is-implemented",
+      "./set-prototype-of/shim"
     ],
     "npm:es5-ext@0.10.42/object/assign/index.js": [
       "./is-implemented",
       "./shim"
     ],
-    "npm:es5-ext@0.10.42/object/create.js": [
-      "./set-prototype-of/is-implemented",
-      "./set-prototype-of/shim"
+    "npm:es5-ext@0.10.42/string/#/contains/index.js": [
+      "./is-implemented",
+      "./shim"
     ],
     "npm:es6-symbol@3.1.1/validate-symbol.js": [
       "./is-symbol"
@@ -1232,14 +1232,14 @@ System.config({
       "../keys/index",
       "../valid-value"
     ],
+    "npm:es5-ext@0.10.42/object/map.js": [
+      "./valid-callable",
+      "./for-each"
+    ],
     "npm:es5-ext@0.10.42/object/copy.js": [
       "../array/from/index",
       "./assign/index",
       "./valid-value"
-    ],
-    "npm:es5-ext@0.10.42/object/map.js": [
-      "./valid-callable",
-      "./for-each"
     ],
     "npm:es5-ext@0.10.42/object/keys/index.js": [
       "./is-implemented",
@@ -1287,7 +1287,7 @@ System.config({
     ]
   },
   bundles: {
-    "app-build-94a2f2857f.js": [
+    "app-build-a07df86c38.js": [
       "main.js",
       "views/app.html!github:systemjs/plugin-text@0.0.8.js",
       "views/app.js"
